@@ -1,0 +1,152 @@
+{
+  "gemini-20260122213620": {
+    "id": "gemini-20260122213620",
+    "agent": "gemini",
+    "description": "Analyze all trading data. Find patterns, what works, what failed. Focus on filters and decision logic.",
+    "priority": "high",
+    "status": "pending",
+    "assigned": "2026-01-22T21:36:20.920426",
+    "completed": null,
+    "output": null
+  },
+  "grok-20260122213620": {
+    "id": "grok-20260122213620",
+    "agent": "grok",
+    "description": "Analyze social patterns for successful tokens. Twitter sentiment, community engagement.",
+    "priority": "high",
+    "status": "pending",
+    "assigned": "2026-01-22T21:36:20.943057",
+    "completed": null,
+    "output": null
+  },
+  "claude-20260122213620": {
+    "id": "claude-20260122213620",
+    "agent": "claude",
+    "description": "Read Gemini and Grok insights. Design trading strategy with clear filters and decision logic.",
+    "priority": "high",
+    "status": "pending",
+    "assigned": "2026-01-22T21:36:20.943651",
+    "completed": null,
+    "output": null
+  },
+  "gemini-20260122213821": {
+    "id": "gemini-20260122213821",
+    "agent": "gemini",
+    "description": "Analyze all trading data. Find patterns, what works, what failed. Focus on filters and decision logic.",
+    "priority": "high",
+    "status": "pending",
+    "assigned": "2026-01-22T21:38:21.749902",
+    "completed": null,
+    "output": null
+  },
+  "grok-20260122213821": {
+    "id": "grok-20260122213821",
+    "agent": "grok",
+    "description": "Analyze social patterns for successful tokens. Twitter sentiment, community engagement.",
+    "priority": "high",
+    "status": "completed",
+    "assigned": "2026-01-22T21:38:21.773238",
+    "completed": "2026-01-22T21:38:21.773826",
+    "output": "Grok API integration pending"
+  },
+  "claude-20260122213821": {
+    "id": "claude-20260122213821",
+    "agent": "claude",
+    "description": "Read Gemini and Grok insights from SYSTEM_STATE.md. Design trading strategy with clear filters and decision logic.",
+    "priority": "high",
+    "status": "pending",
+    "assigned": "2026-01-22T21:38:21.774565",
+    "completed": null,
+    "output": null
+  },
+  "gemini-20260122214628": {
+    "id": "gemini-20260122214628",
+    "agent": "gemini",
+    "description": "Analyze all trading data. Find patterns, what works, what failed. Focus on filters and decision logic.",
+    "priority": "high",
+    "status": "pending",
+    "assigned": "2026-01-22T21:46:28.766495",
+    "completed": null,
+    "output": null
+  },
+  "grok-20260122214628": {
+    "id": "grok-20260122214628",
+    "agent": "grok",
+    "description": "Analyze social patterns for successful tokens. Twitter sentiment, community engagement.",
+    "priority": "high",
+    "status": "completed",
+    "assigned": "2026-01-22T21:46:28.791707",
+    "completed": "2026-01-22T21:46:28.792424",
+    "output": "Grok API integration pending"
+  },
+  "claude-20260122214628": {
+    "id": "claude-20260122214628",
+    "agent": "claude",
+    "description": "Read Gemini and Grok insights from SYSTEM_STATE.md. Design trading strategy with clear filters and decision logic.",
+    "priority": "high",
+    "status": "pending",
+    "assigned": "2026-01-22T21:46:28.793691",
+    "completed": null,
+    "output": null
+  },
+  "gemini-20260122214816": {
+    "id": "gemini-20260122214816",
+    "agent": "gemini",
+    "description": "Analyze all trading data. Find patterns, what works, what failed. Focus on filters and decision logic.",
+    "priority": "high",
+    "status": "pending",
+    "assigned": "2026-01-22T21:48:16.181528",
+    "completed": null,
+    "output": null
+  },
+  "grok-20260122214817": {
+    "id": "grok-20260122214817",
+    "agent": "grok",
+    "description": "Analyze social patterns for successful tokens. Twitter sentiment, community engagement.",
+    "priority": "high",
+    "status": "completed",
+    "assigned": "2026-01-22T21:48:17.486803",
+    "completed": "2026-01-22T21:48:17.487600",
+    "output": "Grok API integration pending"
+  },
+  "claude-20260122214817": {
+    "id": "claude-20260122214817",
+    "agent": "claude",
+    "description": "Read Gemini and Grok insights from SYSTEM_STATE.md. Design trading strategy with clear filters and decision logic.",
+    "priority": "high",
+    "status": "pending",
+    "assigned": "2026-01-22T21:48:17.488595",
+    "completed": null,
+    "output": null
+  },
+  "gemini-20260122215041": {
+    "id": "gemini-20260122215041",
+    "agent": "gemini",
+    "description": "Analyze all trading data. Find patterns, what works, what failed. Focus on filters and decision logic.",
+    "priority": "high",
+    "status": "pending",
+    "assigned": "2026-01-22T21:50:41.351911",
+    "completed": null,
+    "output": null
+  },
+  "grok-20260122215042": {
+    "id": "grok-20260122215042",
+    "agent": "grok",
+    "description": "Analyze social patterns for successful tokens. Twitter sentiment, community engagement.",
+    "priority": "high",
+    "status": "completed",
+    "assigned": "2026-01-22T21:50:42.733614",
+    "completed": "2026-01-22T21:50:42.734379",
+    "output": "Grok API integration pending"
+  },
+  "claude-20260122215042": {
+    "id": "claude-20260122215042",
+    "agent": "claude",
+    "description": "Read Gemini and Grok insights from SYSTEM_STATE.md. Design trading strategy with clear filters and decision logic.",
+    "priority": "high",
+    "status": "pending",
+    "assigned": "2026-01-22T21:50:42.735335",
+    "completed": null,
+    "output": null
+  }
+}

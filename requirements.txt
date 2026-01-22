@@ -3,3 +3,5 @@ click>=8.0
 requests>=2.31.0
 paramiko>=3.0.0
 google-generativeai>=0.3.0
+# Grok API (when available)
+# grok-api>=1.0.0

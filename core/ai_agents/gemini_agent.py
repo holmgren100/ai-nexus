@@ -23,9 +23,11 @@ class GeminiAgent(BaseAgent):
             }
         
         try:
-            import google.generativeai as genai
-            genai.configure(api_key=self.api_key)
-            model = genai.GenerativeModel('gemini-pro')
+            # Use NEW google.genai package (not deprecated one)
+            import google.genai as genai
+            from google.genai import types
+            
+            client = genai.Client(api_key=self.api_key)
             
             # Build prompt
             prompt = f"""You are an AI trading analyst helping analyze a Solana trading bot.
@@ -44,7 +46,10 @@ Provide a concise, actionable analysis focusing on:
 
 Keep response under 500 words."""
             
-            response = model.generate_content(prompt)
+            response = client.models.generate_content(
+                model='gemini-2.0-flash-exp',
+                contents=prompt
+            )
             
             return {
                 'success': True,
@@ -55,7 +60,7 @@ Keep response under 500 words."""
         except ImportError:
             return {
                 'success': False,
-                'error': 'google-generativeai package not installed. Run: pip install google-generativeai'
+                'error': 'google-genai package not installed. Run: pip install google-genai'
             }
         except Exception as e:
             return {

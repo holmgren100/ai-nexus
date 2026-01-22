@@ -1,0 +1,35 @@
+{
+  "decision-20260122213822": {
+    "id": "decision-20260122213822",
+    "topic": "Strategy Approach",
+    "options": [
+      "Remove age-based logic",
+      "Keep age-based logic",
+      "Hybrid approach"
+    ],
+    "context": {
+      "completed_tasks": 1
+    },
+    "votes": {
+      "gemini": {
+        "choice": "Remove age-based logic",
+        "reasoning": "Data shows age doesn't correlate with success",
+        "timestamp": "2026-01-22T21:38:22.094213"
+      },
+      "grok": {
+        "choice": "Remove age-based logic",
+        "reasoning": "Social signals are independent of token age",
+        "timestamp": "2026-01-22T21:38:22.094599"
+      },
+      "claude": {
+        "choice": "Remove age-based logic",
+        "reasoning": "Simplifies logic and matches data patterns",
+        "timestamp": "2026-01-22T21:38:22.095370"
+      }
+    },
+    "status": "resolved",
+    "created": "2026-01-22T21:38:22.093752",
+    "resolved": "2026-01-22T21:38:22.096122",
+    "result": "Remove age-based logic"
+  }
+}

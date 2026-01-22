@@ -75,3 +75,65 @@ def analyze(project_name):
     from .commands.analyze import analyze as analyze_cmd
     ctx = click.get_current_context()
     ctx.invoke(analyze_cmd, project_name=project_name)
+
+@main.group()
+def orchestrate():
+    """Orchestrate AI dev team"""
+    pass
+
+@orchestrate.command('new')
+@click.argument('project_name')
+@click.option('--goal', required=True, help='Project goal')
+@click.option('--agents', default='gemini,claude,grok,claude-code', help='AI agents')
+@click.option('--based-on', default=None, help='Base on existing project')
+def orchestrate_new(project_name, goal, agents, based_on):
+    """Create new orchestrated project"""
+    from .commands.orchestrate import orchestrate as orch_cmd
+    ctx = click.get_current_context()
+    ctx.invoke(orch_cmd, project_name=project_name, goal=goal, agents=agents, based_on=based_on)
+
+@orchestrate.command('status')
+@click.argument('project_name')
+def orchestrate_status(project_name):
+    """Show orchestration status"""
+    from .commands.orchestrate import status as status_cmd
+    ctx = click.get_current_context()
+    ctx.invoke(status_cmd, project_name=project_name)
+
+@main.group()
+def tasks():
+    """Manage AI agent tasks"""
+    pass
+
+@tasks.command('assign')
+@click.argument('project_name')
+@click.option('--auto', is_flag=True, help='Auto-assign tasks')
+def tasks_assign(project_name, auto):
+    """Assign tasks to AI agents"""
+    from .commands.tasks import assign
+    ctx = click.get_current_context()
+    ctx.invoke(assign, project_name=project_name, auto=auto)
+
+@tasks.command('list')
+@click.argument('project_name')
+def tasks_list(project_name):
+    """List tasks"""
+    from .commands.tasks import list_tasks
+    ctx = click.get_current_context()
+    ctx.invoke(list_tasks, project_name=project_name)
+
+@main.command()
+@click.argument('project_name')
+def consensus(project_name):
+    """Build consensus from AI outputs"""
+    from .commands.consensus import consensus as consensus_cmd
+    ctx = click.get_current_context()
+    ctx.invoke(consensus_cmd, project_name=project_name)
+
+@main.command()
+@click.argument('project_name') 
+def decisions(project_name):
+    """Show project decisions"""
+    from .commands.consensus import decisions as decisions_cmd
+    ctx = click.get_current_context()
+    ctx.invoke(decisions_cmd, project_name=project_name)

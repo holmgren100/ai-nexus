@@ -1,0 +1,27 @@
+agents:
+  claude:
+    enabled: true
+    status: pending
+  claude-code:
+    enabled: true
+    status: pending
+  gemini:
+    enabled: true
+    status: pending
+  grok:
+    enabled: true
+    status: pending
+data_sources: []
+project:
+  based_on: solana-bot
+  created: '2026-01-22T21:36:06.829260'
+  goal: Build 60% win rate trading bot
+  name: new-bot
+spoke_servers:
+  trading:
+    host: 209.38.229.243
+    paths:
+      data: /root/solbottrad/data/
+      logs: /root/solbottrad/bot.log
+    ssh_key: ~/.ssh/id_ai_nexus
+    user: root
