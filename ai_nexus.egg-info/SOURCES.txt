@@ -9,3 +9,13 @@ ai_nexus.egg-info/dependency_links.txt
 ai_nexus.egg-info/entry_points.txt
 ai_nexus.egg-info/requires.txt
 ai_nexus.egg-info/top_level.txt
+ai_nexus/commands/__init__.py
+ai_nexus/commands/analyze.py
+ai_nexus/commands/ask.py
+ai_nexus/commands/sync.py
+core/__init__.py
+core/ai_agents/__init__.py
+core/ai_agents/base_agent.py
+core/ai_agents/gemini_agent.py
+core/collectors/__init__.py
+core/collectors/remote_collector.py
