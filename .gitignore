@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 venv/
 .env
+
+# Project data (too large for GitHub)
+projects/*/data/
+*.log
+*.csv
