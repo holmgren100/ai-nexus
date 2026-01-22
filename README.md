@@ -1,24 +1,40 @@
-# ai-nexus
+# ai-nexus - AI Dev Team Orchestration Platform
 
-Universal AI Collaboration Platform - Hub & Spoke Architecture
+Multi-AI coordination platform for automated development workflows.
+
+## Architecture
+- Hub (Google Cloud): AI coordination & data sync
+- Spoke (DO): Trading bot execution
+- Auto-sync: Every hour via cron
+
+## AI Agents
+- Gemini: Data/pattern analysis (FREE)
+- Grok: Social signals (ready to enable)
+- Claude: Strategy design
+- Claude Code: Implementation
 
 ## Quick Start
 ```bash
-# Install
-pip install -e .
+# Create project:
+ai-nexus orchestrate new my-project --goal "Build X"
 
-# Check version
-ai-nexus --version
+# Sync data:
+ai-nexus sync my-project
 
-# Show status
-ai-nexus status
+# Assign AI tasks:
+ai-nexus tasks assign my-project --auto
 
-# Initialize project
-ai-nexus init solana-bot
+# Build consensus:
+ai-nexus consensus my-project
 ```
 
-## Architecture
+## Status
+- Infrastructure: Complete ✅
+- Auto-sync: Running hourly ✅
+- AI coordination: Working ✅
+- First bot: In development (Claude Code)
 
-- **Hub**: Google Cloud (ai-nexus coordination)
-- **Spoke**: Digital Ocean (trading bot execution)
-- **Connection**: SSH + data sync
+## Cost
+- Google Cloud: $0/month (free tier)
+- Claude: $20/month
+- Total: $20/month
